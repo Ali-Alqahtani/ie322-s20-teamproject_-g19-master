@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApp.Views.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login"
+                FontSize="18"
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Username" FontSize="Medium" />
+            <Entry x:Name="username" FontSize="Small" />
+            <Label Text="Password" FontSize="Medium" />
+            <Entry IsPassword="True" x:Name="password" FontSize="Small" />
+            <Button x:Name="login" Text="Login" Clicked="login_Clicked" HorizontalOptions="FillAndExpand" />
+            <Label Text="To test our app please follow below info:" FontSize="20" />
+            <Label Text="Cardiologist-Dr.Khalid Username: cr, Password: demo123" TextColor="Red"/>
+            <Label Text="Neurologist-Dr.Mohammed Username: nu, Password: demo123" TextColor="Red"/>
+            <Label Text="Ophthalmologist-Dr.Yousif Username: ob, Password: demo123" TextColor="Red"/>
+            <Label Text="Patient Username: patient, Password: demo123" TextColor="Red"/>
+            <Label Text="Receptionist Username: re, Password: demo123" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

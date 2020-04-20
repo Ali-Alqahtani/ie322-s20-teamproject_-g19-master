@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MedicalApp.Views.Homepage">
+    <ContentPage.Content>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Text="Our Doctors" x:Name="Doctor" Clicked="Doctor_Clicked" />
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1">
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Text="View Appointment" x:Name="ViewAppointment" Clicked="ViewAppointment_Clicked" />
+            </StackLayout>
+            <StackLayout x:Name="staffOnly" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0">
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="Patients" Text="Patient List" Clicked="Patients_Clicked" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
